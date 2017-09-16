@@ -6,7 +6,7 @@
                <h3 class="widget-title">About <span class="wlast">March Working</span><span class="small-line"> </span></h3>
                <p>
                   Every person has a rights of financial freedom.  We believe this right and we are trying to make them FREE. <br><br>  
-                  अमीरी �?वं ग़रीबी के बीच की दूरी को कम करने की �?क सकारात�?मक पहल... "March Working"
+                  अमीरी एवं ग़रीबी के बीच की दूरी को कम करने की एक सकारात्मक पहल.. "March Working"
 
                </p>
             </aside>
