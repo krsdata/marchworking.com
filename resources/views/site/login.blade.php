@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-sm-9">
                         <ul class="header-menu"> 
-                            <li><a href="/" class='{{($pathinfo=="")?"active":"" }}'>Home</a></li>
+                            <li><a href="{{url('/')}}" class='{{($pathinfo=="")?"active":"" }}'>Home</a></li>
                             <li><a href="about" class="{{($pathinfo=='about')?'active':'' }}" >About Us</a></li>
                             <li><a href="business-plan" class="{{($pathinfo=='business-plan')?'active':'' }}" >Business Plan</a></li>
                             <li><a href="join-us" class="{{($pathinfo=='join-us')?'active':'' }}">Join Us</a></li>
