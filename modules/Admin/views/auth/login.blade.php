@@ -9,7 +9,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>CMS Login</title>
+        <title> Login</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Preview page of Metronic Admin Theme #4 for " name="description" />
@@ -38,21 +38,21 @@
         <link rel="shortcut icon" href="favicon.ico" /> </head>
     <!-- END HEAD -->
 
-    <body class=" login">
+    <body class=" login" style="background:#f07d00 !important">
+    
         <!-- BEGIN LOGO -->
-        <div class="logo">
-            
-                <p style="font-size: 30px; font-family: inherit; color:#fff; margin: 0px; padding: 0px"> <b style="color:yellow">Yellotasker </b> CMS</p>
-        </div>
+       <p style="margin-top: 80px;">
+       </p>
 
         <!-- END LOGO -->
         <!-- BEGIN LOGIN -->
         <div class="content">
+         <img src="http://www.marchworking.com/public/assets/img/logo1.jpg" width="315px">
         
             <!-- BEGIN LOGIN FORM -->
         
     {!! Form::model($user, ['url' => ['admin/login'],'class'=>'form-horizontal login-form','files' => true]) !!}
-              
+              <hr style="margin-top: 10px" />
        @include('packages::auth.form')
     {!! Form::close() !!}
             <!-- END LOGIN FORM -->
@@ -65,7 +65,7 @@
            
             <!-- END REGISTRATION FORM -->
         </div>
-        <div class="copyright"> {{date('Y')}} © Yellotasker. All rights reserved </div>
+       
         <!-- END LOGIN -->
         <!--[if lt IE 9]>
 <script src="{{ URL::asset('assets/global/plugins/respond.min.js') }}"></script>
