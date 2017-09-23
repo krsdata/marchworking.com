@@ -32,7 +32,8 @@
             return Modules\Admin\Models\User::find($value);
         });
 
-          Route::get('admin/user/tree', 'Modules\Admin\Http\Controllers\UsersController@getTree');
+        Route::get('admin/user/tree', 'Modules\Admin\Http\Controllers\UsersController@getTree');
+        Route::get('admin/user/tree/{id}', 'Modules\Admin\Http\Controllers\UsersController@getTreeChild');
 
         Route::resource('admin/user', 'Modules\Admin\Http\Controllers\UsersController', [
             'names' => [
