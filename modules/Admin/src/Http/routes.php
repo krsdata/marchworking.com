@@ -1,8 +1,4 @@
 <?php
-    
-    Route::get('abc',function(){
-        echo "test";
-    });
 
     Route::get('admin/login','Modules\Admin\Http\Controllers\AuthController@index');
     Route::get('admin/forgot-password','Modules\Admin\Http\Controllers\AuthController@forgetPassword');
@@ -12,21 +8,18 @@
 
     Route::post('admin/login',function(App\Admin $user){
    
-    $credentials = ['email' => Input::get('email'), 'password' => Input::get('password')]; 
-    
-   // $credentials = ['email' => 'kundan@gmail.com', 'password' => 123456]; 
-    $auth = auth()->guard('admin');
-    
-
+        $credentials = ['email' => Input::get('email'), 'password' => Input::get('password')]; 
+        
+        $auth = auth()->guard('admin');
+        
         if ($auth->attempt($credentials)) {
-            return Redirect::to('admin');
+                return Redirect::to('admin');
         }else{ 
-           //return Redirect::to('admin/login')->withError(['message'=>'Invalid Credential!']);
-            return redirect()
+           return redirect()
                         ->back()
                         ->withInput()  
                         ->withErrors(['message'=>'Invalid email or password. Try again!']);
-            } 
+        } 
     }); 
       
     Route::group(['middleware' => ['admin']], function () { 
@@ -38,6 +31,8 @@
         Route::bind('user', function($value, $route) {
             return Modules\Admin\Models\User::find($value);
         });
+
+          Route::get('admin/user/tree', 'Modules\Admin\Http\Controllers\UsersController@getTree');
 
         Route::resource('admin/user', 'Modules\Admin\Http\Controllers\UsersController', [
             'names' => [

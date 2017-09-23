@@ -1,3 +1,12 @@
+@extends('packages::layouts.master')
+  @section('title', 'Dashboard')
+    @section('header')
+    <h1>Dashboard</h1>
+    @stop
+    @section('content') 
+      @include('packages::partials.navigation')
+      <!-- Left side column. contains the logo and sidebar -->
+      @include('packages::partials.sidebar')
 
             <!-- END SIDEBAR -->
             <!-- BEGIN CONTENT -->
@@ -70,40 +79,7 @@
                                         <tbody>
                                         @foreach($users as $key => $result)
                                             <tr>
-                                                <td> {{++$key}} </td>
-                                                <td> {{$result->name}} </td>
-                                                <td> {{$result->email}} </td>
-                                                <td> {{$result->phone}} </td>
-                                                <td class="center"> 
-                                                {{$result->referal_code}}
-
-                                                   </td>
-                                                     <td>
-                                                        {!! Carbon\Carbon::parse($result->created_at)->format('Y-m-d'); !!}
-                                                    </td>
-                                                    <td>
-                                                        <span class="label label-{{ ($result->status==1)?'success':'warning'}} status" id="{{$result->id}}"  data="{{$result->status}}"  onclick="changeStatus({{$result->id}},'user')" >
-                                                            {{ ($result->status==1)?'Active':'Pending'}}
-                                                        </span>
-                                                    </td>
-                                                    <td> 
-                                                       <!--  <a href="{{ route('user.edit',$result->id)}}">
-                                                            <i class="fa fa-fw fa-pencil-square-o" title="edit"></i> 
-                                                        </a>  -->
-
-                                                      <!--   {!! Form::open(array('class' => 'form-inline pull-left deletion-form', 'method' => 'DELETE',  'id'=>'deleteForm_'.$result->id, 'route' => array('user.destroy', $result->id))) !!}
-                                                        <button class='delbtn btn btn-danger btn-xs' type="submit" name="remove_levels" value="delete" id="{{$result->id}}"><i class="fa fa-fw fa-trash" title="Delete"></i></button>
-                                                        
-                                                         {!! Form::close() !!} -->
-
-                                                         <a href="http://localhost/marchworking.com/admin/user/1" class="nav-link ">
-                                                         <i class="glyphicon glyphicon-eye-open"></i> 
-                                                        <span class="title">
-                                                            View 
-                                                        </span>
-                                            </a>
-
-                                                    </td>
+                                                 
                                                
                                             </tr>
                                            @endforeach
@@ -132,3 +108,4 @@
             }
         </script>
         
+@stop

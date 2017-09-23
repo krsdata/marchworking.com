@@ -29,249 +29,149 @@
                     <!-- END PAGE BREADCRUMB -->
                     <!-- BEGIN PAGE BASE CONTENT -->
                     <div class="row">
-                       
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
+                       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <a class="dashboard-stat dashboard-stat-v2 red" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-bar-chart-o"></i>
+                                </div>
+                                <div class="details">
                                     <div class="number">
-                                        <h3 class="font-purple-soft">
-                                            <span data-counter="counterup" data-value="276">{{0}}</span>
-                                        </h3>
-                                        <small>Payout</small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="icon-user"></i>
-                                    </div>
+                                        <span data-counter="counterup" data-value="12,5">12,5</span>M$ </div>
+                                    <div class="desc"> Total Payout </div>
                                 </div>
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 10%;" class="progress-bar progress-bar-success purple-soft">
-                                            <span class="sr-only">10% change</span>
-                                        </span>
-                                    </div>
-                                     
-                                </div>
-                            </div>
+                            </a>
                         </div>
     
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
-                                    <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="567">{{ 0 }}</span>
-                                        </h3> 
-                                        <small>Total Downline  </small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
+                            <a class="dashboard-stat dashboard-stat-v2 purple" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-globe"></i>
                                 </div>
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 6%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">6% grow</span>
-                                        </span>
-                                    </div>
-                                   
+                                <div class="details">
+                                    <div class="number"> +
+                                        <span data-counter="counterup" data-value="89">89</span>% </div>
+                                    <div class="desc"> Total Downline </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
+                            <a class="dashboard-stat dashboard-stat-v2 blue" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-bar-chart-o"></i>
+                                </div>
+                                <div class="details">
                                     <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="6">{{0}}</span>
-                                        </h3>
-                                        <small> Total Income</small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
+                                        <span data-counter="counterup" data-value="12,5">12,5</span>INR </div>
+                                    <div class="desc"> Total Income </div>
                                 </div>
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 6%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">6% grow</span>
-                                        </span>
-                                    </div>
-                                    
+                            </a>
+                        </div>
+
+                         
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <a class="dashboard-stat dashboard-stat-v2 green" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-shopping-cart"></i>
                                 </div>
-                            </div>
+                                <div class="details">
+                                    <div class="number">
+                                        <span data-counter="counterup" data-value="549">549 INR </span>
+                                    </div>
+                                    <div class="desc"> Total Withdraw </div>
+                                </div>
+                            </a>
                         </div>
 
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
-                                    <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="567">{{ 0 }}</span>
-                                        </h3>
-                                        <small> Total Withdraw</small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
-                                </div> 
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">45% grow</span>
-                                        </span>
-                                    </div>
-                                    
+                            <a class="dashboard-stat dashboard-stat-v2 grey-mint" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-user"></i>
                                 </div>
-                            </div>
+                                <div class="details">
+                                    <div class="number">
+                                        <span data-counter="counterup" data-value="1349">1349</span>
+                                    </div>
+                                    <div class="desc"> Total Direct Joining  </div>
+                                </div>
+                            </a>
                         </div>
 
-                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
-                                    <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="6">{{ 0 }}</span>
-                                        </h3>
-                                        <small> Total Direct Joining </small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
-                                </div> 
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 6%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">6% grow</span>
-                                        </span>
-                                    </div>
-                                    
+                        
+
+                        
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <a class="dashboard-stat dashboard-stat-v2  yellow-crusta" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-shopping-cart"></i>
                                 </div>
-                            </div>
+                                <div class="details">
+                                    <div class="number">
+                                        <span data-counter="counterup" data-value="549">Yes </span>
+                                    </div>
+                                    <div class="desc"> Franchisee </div>
+                                </div>
+                            </a>
                         </div>
 
 
-                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
-                                    <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="567">{{ 0 }}</span>
-                                        </h3>
-                                        <small> Franchisee</small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
-                                </div> 
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">45% grow</span>
-                                        </span>
-                                    </div>
-                                    
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <a class="dashboard-stat dashboard-stat-v2 purple" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-globe"></i>
                                 </div>
-                            </div>
+                                <div class="details">
+                                    <div class="number"> +
+                                        <span data-counter="counterup" data-value="89">30</span> </div>
+                                    <div class="desc"> E-PIN </div>
+                                </div>
+                            </a>
                         </div>
 
 
-                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
-                                    <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="567">{{ 0 }}</span>
-                                        </h3>
-                                        <small> E-PIN</small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
-                                </div> 
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">45% grow</span>
-                                        </span>
-                                    </div>
-                                    
+                       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <a class="dashboard-stat dashboard-stat-v2 red" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-bar-chart-o"></i>
                                 </div>
-                            </div>
+                                <div class="details">
+                                    <div class="number">
+                                        <span data-counter="counterup" data-value="12,5">1</span> </div>
+                                    <div class="desc"> Invoice </div>
+                                </div>
+                            </a>
                         </div>
 
 
-                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
-                                    <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="567">{{ 0 }}</span>
-                                        </h3>
-                                        <small> Invoice </small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
-                                </div> 
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">45% grow</span>
-                                        </span>
-                                    </div>
-                                    
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <a class="dashboard-stat dashboard-stat-v2 green-jungle" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-globe"></i>
                                 </div>
-                            </div>
+                                <div class="details">
+                                    <div class="number"> +
+                                        <span data-counter="counterup" data-value="89">30</span> </div>
+                                    <div class="desc"> Support</div>
+                                </div>
+                            </a>
                         </div>
 
-
-                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
-                                    <div class="number">
-                                        <h3 class="font-blue-sharp">
-                                            <span data-counter="counterup" data-value="567">{{ 0 }}</span>
-                                        </h3>
-                                        <small> Customer Support</small>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
-                                </div> 
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">45% grow</span>
-                                        </span>
-                                    </div>
-                                    
+                          
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <a class="dashboard-stat dashboard-stat-v2 blue" href="#">
+                                <div class="visual">
+                                    <i class="fa fa-user"></i>
                                 </div>
-                            </div>
-                        </div>
-
-                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="dashboard-stat2 bordered">
-                                <div class="display">
+                                <div class="details">
                                     <div class="number">
-                                        
-                                        <small> Employee of the month  </small>
+                                        <span data-counter="counterup" data-value="1349"></span>
                                     </div>
-                                    <div class="icon">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </div>
-                                </div> 
-                                <div class="progress-info">
-                                    <div class="progress">
-                                        <span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">45% grow</span>
-                                        </span>
-                                    </div>
-                                    
+                                    <div class="desc"> Employee of the month </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-
 
                     </div>
 

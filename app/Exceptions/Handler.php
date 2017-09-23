@@ -56,7 +56,7 @@ class Handler extends ExceptionHandler
      * @return \Illuminate\Http\Response
      */
     public function render($request, Exception $e)
-    {   dd($e);   
+    {    
        $path_info_url = $request->getpathInfo();
        $api_url='';
        $web_url ='';
@@ -112,7 +112,7 @@ class Handler extends ExceptionHandler
                 echo json_encode(
                     [ "status"=>1,
                       "code"=>200,
-                      "message"=>"Oops! Server is busy please try later." ,
+                      "message"=>"Oops! Server error : ".$e->getMessage() ,
                       "data" => "" 
                     ]
                 );
@@ -121,7 +121,7 @@ class Handler extends ExceptionHandler
               $page_action = "Page";
               $viewPage = "404 Error";
               $msg = "page not found";
-              $error_msg = "Oops! Server is busy please try later."; 
+              $error_msg = "Oops! Server error: ".$e->getMessage(); 
               return view('packages::auth.page_not_found',compact('error_msg','page_title','page_action','viewPage'))->with('flash_alert_notice', $msg);
             } 
             exit();

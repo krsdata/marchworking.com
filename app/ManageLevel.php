@@ -2,17 +2,22 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class Cart extends Model
-{
-    
-	/**
+use Nestable\NestableTrait;
+
+class ManageLevel extends Eloquent {
+
+    use NestableTrait;
+
+    protected $parent = 'parent_id';
+
+     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'carts';
+    protected $table = 'manage_level';
     /**
      * The attributes that are mass assignable.
      *
@@ -25,14 +30,5 @@ class Cart extends Model
      */
     protected $primaryKey = 'id';
 
-    public function user()
-    {
-        return $this->belongsTo('App\User');
-    }
-
-    public function cartItems()
-    {
-        return $this->hasMany('App\CartItem');
-    }
 
 }

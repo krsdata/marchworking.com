@@ -10,7 +10,7 @@
                                             <div class="form-group {{ $errors->first('referal_code', ' has-error') }}">
                                                 <label class="control-label col-md-3">Referal Code <span class="required"> * </span></label>
                                                 <div class="col-md-4"> 
-                                                    {!! Form::text('referal_code','mw007', ['class' => 'form-control','data-required'=>1,'readonly'])  !!} 
+                                                    {!! Form::text('referal_code',$referal_code, ['class' => 'form-control','data-required'=>1,'readonly'])  !!} 
                                                     
                                                     <span class="help-block">{{ $errors->first('referal_code', ':message') }}</span>
                                                 </div>
